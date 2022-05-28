@@ -1,14 +1,18 @@
 import "./App.css";
+import { Layout, Menu } from "antd";
+import Navbar from "../components/common/Navbar/Navbar";
+import InstagramOutlined from "@ant-design/icons/InstagramOutlined";
 
-import { Breadcrumb, Layout, Menu } from "antd";
 const { Header, Footer, Sider, Content } = Layout;
-
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Header style={{ color: "white" }}>Header</Header>
-        <Content>
+        <Header>
+          <Navbar />
+        </Header>
+
+        <Content style={{ height: "1000px", lineHeight: "1000px" }}>
           <h1>content</h1>
         </Content>
         <Footer>Footer</Footer>
