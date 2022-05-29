@@ -7,7 +7,6 @@ import styles from "./Pages.module.css";
 
 const Pages = () => {
   const [pages, setPages] = useState([
-    "HOME",
     "GAME",
     "CHAMPIONS",
     "NEWS",
@@ -18,7 +17,7 @@ const Pages = () => {
     <>
       {pages.map((page) => (
         <Button type="ghost" key={page} name={page} className={styles.button}>
-          <Link to="">{page}</Link>
+          <Link to={`/${page}`}>{page}</Link>
         </Button>
       ))}
     </>

@@ -1,24 +1,17 @@
 import "./App.css";
-import { Layout, Menu } from "antd";
-import Navbar from "../components/common/Navbar/Navbar";
 
+import { Routes, Route } from "react-router-dom";
 
+// Components
+import Landing from "../screen/Landing/Landing";
+import Game from "../screen/Game/Game";
 
-const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
-    <div className="App">
-      <Layout>
-        <Header>
-          <Navbar />
-        </Header>
-
-        <Content style={{ height: "1000px", lineHeight: "1000px" }}>
-          <h1>content</h1>
-        </Content>
-        <Footer>Footer</Footer>
-      </Layout>
-    </div>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/GAME" element={<Game />} />
+    </Routes>
   );
 }
 

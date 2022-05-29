@@ -4,7 +4,7 @@ import { Layout } from "antd";
 // Components
 import Navbar from "../../components/common/Navbar/Navbar";
 
-const Landing = () => {
+const Game = () => {
   const { Header, Footer, Sider, Content } = Layout;
   return (
     <>
@@ -14,7 +14,7 @@ const Landing = () => {
         </Header>
 
         <Content style={{ height: "1000px", lineHeight: "1000px" }}>
-          <h1>content</h1>
+          <h1>game content</h1>
         </Content>
         <Footer>Footer</Footer>
       </Layout>
@@ -22,4 +22,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Game;

@@ -5,6 +5,7 @@ import { Layout, Button, Drawer } from "antd";
 // Components
 import Pages from "./Pages/Pages";
 import Sign from "./Sign/Sign";
+import Landing from "../../../screen/Landing/Landing";
 
 // Styles
 import styles from "./Navbar.module.css";
@@ -29,7 +30,13 @@ const Navbar = () => {
     <>
       <Header className={styles.header}>
         <div className={`${styles.menuItems}`}>
-          <RiotGames />
+          <Link
+            to="/"
+            element={<Landing />}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <RiotGames />
+          </Link>
         </div>
 
         <div className={`${styles.menuItems} ${styles.mobileHidden}`}>
@@ -62,7 +69,8 @@ const Navbar = () => {
               flexWrap: "wrap",
               justifyContent: "flex-start",
               textAlign: "center",
-              gap: "20px",
+              gap: "15px",
+              paddingTop: "26px",
             }}
             headerStyle={{ background: "#1f1f1f", color: "#fff" }}
           >

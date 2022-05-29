@@ -3,6 +3,7 @@
   border: none;
   transition: all 0.2s ease;
 }
+
 .button:nth-child(2) {
   border-radius: 15px;
   background: rgb(11, 196, 226);
