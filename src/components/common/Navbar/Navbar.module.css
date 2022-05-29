@@ -1,9 +1,88 @@
-.header{
-    position: fixed;
-    z-index: 1;
-    width: 100% ;
-    left: 0;
-    overflow: auto;
-    background: #111;
-    color: #fff;
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  background: #111;
+  color: #fff !important;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menuItems {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.menuItems a {
+  justify-content: space-evenly;
+  margin: 0 10px 0 10px;
+  color: #fff;
+}
+.mobileHidden {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+}
+.menuItems svg {
+  width: 55%;
+  transition: all 0.2s ease-in-out;
+}
+.menuItems svg:hover {
+  width: 58%;
+  transition: all 0.2s ease-in-out;
+}
+.menuDrawer {
+  background: rgba(255, 255, 255, 0.181);
+  border: none;
+  border-radius: 19px;
+  height: 65%;
+}
+.menuDrawer:hover {
+  background: rgba(255, 255, 255, 0.337);
+}
+.menuDrawer svg {
+  fill: #fff;
+}
+.menuDrawer:hover svg {
+  fill: #fff;
+}
+.mobileVisibile {
+  display: none;
+}
+.drawer {
+}
+.drawer .button {
+  all: revert !important;
+}
+
+.drawer .button:hover {
+  text-align: center;
+  background: none;
+  color: #fff;
+  height: fit-content;
+  border: none;
+  width: fit-content;
+  border-radius: none;
+  transition: none;
+}
+@media (max-width: 1200px) {
+  .header{
+    justify-content: space-between;
+  }
+  .mobileVisibile {
+    display: block;
+    
+  }
+  .mobileHidden {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 480px) {
 }

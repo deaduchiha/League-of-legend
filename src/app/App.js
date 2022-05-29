@@ -1,7 +1,8 @@
 import "./App.css";
 import { Layout, Menu } from "antd";
 import Navbar from "../components/common/Navbar/Navbar";
-import InstagramOutlined from "@ant-design/icons/InstagramOutlined";
+
+
 
 const { Header, Footer, Sider, Content } = Layout;
 function App() {
