@@ -2,19 +2,17 @@ import React from "react";
 import { Layout } from "antd";
 
 // Components
-import Navbar from "../../components/common/Navbar/Navbar";
+import HeaderComp from "../../components/common/HeaderComp/HeaderComp";
+import Title from "../../components/Landing/Title/Title";
 
 const Landing = () => {
-  const { Header, Footer, Sider, Content } = Layout;
+  const { Footer, Content } = Layout;
   return (
     <>
       <Layout>
-        <Header>
-          <Navbar />
-        </Header>
-
-        <Content style={{ height: "1000px", lineHeight: "1000px" }}>
-          <h1>content</h1>
+        <HeaderComp />
+        <Content style={{ background: "#fff" }}>
+          <Title />
         </Content>
         <Footer>Footer</Footer>
       </Layout>
