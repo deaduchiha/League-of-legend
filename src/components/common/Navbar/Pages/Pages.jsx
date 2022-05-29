@@ -7,11 +7,11 @@ import styles from "./Pages.module.css";
 
 const Pages = () => {
   const [pages, setPages] = useState([
-    "GAME",
-    "CHAMPIONS",
-    "NEWS",
-    "PATCH NOTES",
-    "UNIVERSE",
+    "game",
+    "champions",
+    "news",
+    "patch notes",
+    "universe",
   ]);
   return (
     <>

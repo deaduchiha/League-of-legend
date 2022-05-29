@@ -26,11 +26,11 @@
   justify-content: space-between;
 }
 .menuItems svg {
-  width: 55%;
+  width: 7.5rem;
   transition: all 0.2s ease-in-out;
 }
 .menuItems svg:hover {
-  width: 58%;
+  width: 8rem;
   transition: all 0.2s ease-in-out;
 }
 .menuDrawer {
