@@ -7,7 +7,7 @@
   left: 0;
   background: #111;
   color: #fff !important;
-  font-family: moon;
+  font-family: mark;
 }
 .menuItems {
   width: 15%;
@@ -51,7 +51,6 @@
 .mobileVisibile {
   display: none;
 }
-
 
 .drawer .button {
   all: revert !important;
