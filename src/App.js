@@ -3,8 +3,8 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 // Components
-import Landing from "../screen/Landing/Landing";
-import Game from "../screen/Game/Game";
+import Landing from "./screen/Landing/Landing";
+import Game from "./screen/Game/Game";
 
 function App() {
   return (
