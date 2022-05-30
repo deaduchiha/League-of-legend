@@ -47,14 +47,14 @@
   height: auto;
 }
 .button {
-  border: none;
-  height: auto;
+  border: none !important;
+  height: auto !important;
   background: rgb(11, 198, 227) !important;
-  color: #111;
-  padding: 0.825rem 1.2rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.925rem;
+  color: #111 !important;
+  padding: 0.825rem 1.2rem !important;
+  text-align: center !important;
+  text-transform: uppercase ;
+  font-size: 0.925rem !important;
 }
 .button:hover {
   color: #111;

@@ -72,7 +72,11 @@ const Navbar = () => {
               gap: "15px",
               paddingTop: "26px",
             }}
-            headerStyle={{ background: "#1f1f1f", color: "#fff", width: "100%" }}
+            headerStyle={{
+              background: "#1f1f1f",
+              color: "#fff",
+              width: "100%",
+            }}
           >
             <Pages />
             <Sign />
