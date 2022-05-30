@@ -56,10 +56,10 @@ const Navbar = () => {
             <MenuOutlined />
           </Button>
           <Drawer
-            closable={false}
             className={styles.drawer}
             placement="right"
             onClose={onClose}
+            width={window.innerWidth > 576 ? "378px" : "75%"}
             visible={visible}
             bodyStyle={{
               background: "#1f1f1f",
@@ -72,7 +72,7 @@ const Navbar = () => {
               gap: "15px",
               paddingTop: "26px",
             }}
-            headerStyle={{ background: "#1f1f1f", color: "#fff" }}
+            headerStyle={{ background: "#1f1f1f", color: "#fff", width: "100%" }}
           >
             <Pages />
             <Sign />

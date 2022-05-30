@@ -1,10 +1,12 @@
 .container {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
   position: relative;
-  font-family: moon;
+  font-family: mark;
+  margin-bottom: 20px;
 }
 .video1 {
+  height: 600px;
   width: 100%;
 }
 .video1 video {
@@ -21,12 +23,13 @@
   right: 0;
   top: 50px;
   z-index: 2;
+  height: 75%;
 }
 
 .video2 video {
   object-fit: fill;
   position: relative;
-  height: 500px;
+  height: 100%;
 }
 
 .title {
@@ -37,16 +40,65 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 .title img {
-  width: 30rem;
+  max-width: 30rem;
+  height: auto;
 }
 .button {
-  background: rgb(11, 198, 227);
+  border: none;
+  height: auto;
+  background: rgb(11, 198, 227) !important;
   color: #111;
-  min-width: 195px;
-  height: 56px;
-  padding: 0px 40px;
+  padding: 0.825rem 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.925rem;
+}
+.button:hover {
+  color: #111;
+  background: rgb(11, 198, 227);
+  box-shadow: 1px 1px 5px #111;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .title img {
+    max-width: 27rem;
+  }
+}
+@media (max-width: 768px) {
+  .title img {
+    max-width: 24rem;
+  }
+}
+@media (max-width: 576px) {
+  .title img {
+    max-width: 21rem;
+  }
+}
+@media (max-width: 480px) {
+  .video1 {
+    display: none;
+  }
+  .title img {
+    max-width: 17rem;
+  }
+  .button{
+    font-size: 0.8rem;
+  }
+  .video2 {
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0px;
+    z-index: 2;
+    height: 400px;
+  }
 }

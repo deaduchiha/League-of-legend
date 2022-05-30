@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: moon;
+  font-family: mark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -9,4 +9,9 @@ body {
 @font-face {
   font-family: moon;
   src: url("./assets/fonts/MoonBold.ttf");
+}
+
+@font-face {
+  font-family: mark;
+  src: url("./assets/fonts/FF\ Mark.otf");
 }

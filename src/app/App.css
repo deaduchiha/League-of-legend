@@ -2,3 +2,6 @@
 * {
   text-align: center;
 }
+.anticon svg {
+  fill: #fff;
+}
