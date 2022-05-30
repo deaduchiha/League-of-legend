@@ -40,7 +40,7 @@ const Title = () => {
           </video>
           <div className={styles.title}>
             <img src={LOGO} alt="LOGO" />
-            <Button className={styles.button} type="ghost" >
+            <Button className={styles.button} type="ghost">
               Play for free
             </Button>
           </div>

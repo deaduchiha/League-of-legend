@@ -12,6 +12,7 @@
 .video1 video {
   object-fit: fill;
   height: 450px;
+  pointer-events: none;
 }
 
 .video2 {
@@ -87,7 +88,7 @@
   .title img {
     max-width: 17rem;
   }
-  .button{
+  .button {
     font-size: 0.8rem;
   }
   .video2 {
